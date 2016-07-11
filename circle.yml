@@ -11,4 +11,4 @@ dependencies:
     - yes | npm install -g aglio
 
   override:
-    - aglio -i apiary.apib -o build/docs/index.html
+    - ./compile.sh
