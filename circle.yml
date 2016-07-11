@@ -1,0 +1,14 @@
+machine:
+  php:
+      version: 5.5.21
+
+general:
+  artifacts:
+    - "~/doc-example/build"
+
+dependencies:
+  pre:
+    - yes | npm install -g aglio
+
+  override:
+    - aglio -i apiary.apib -o build/docs/index.html
