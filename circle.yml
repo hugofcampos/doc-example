@@ -11,6 +11,4 @@ dependencies:
     - yes | npm install -g aglio
 
   override:
-    - git config user.name "Deploy"
-    - git config user.email "hugofcampos@gmail.com"
     - ./compile.sh
