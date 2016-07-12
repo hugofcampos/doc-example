@@ -1,6 +1,6 @@
 machine:
   php:
-      version: 5.5.21
+      version: 7.0.4
 
 general:
   artifacts:
@@ -11,4 +11,6 @@ dependencies:
     - yes | npm install -g aglio
 
   override:
+    - git config user.name "Deploy"
+    - git config user.email "hugofcampos@gmail.com"
     - ./compile.sh
