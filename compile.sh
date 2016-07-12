@@ -3,7 +3,7 @@
 aglio -i ./apiary.apib -o ./build/docs/index.html
 git checkout gh-pages
 rm -rf ./apiary.apib ./circle.yml ./compile.sh
-cp -r ./build/docs/ ./
+cp -r ./build/docs/* ./
 rm -rf ./build > /dev/null
 
 git add .
